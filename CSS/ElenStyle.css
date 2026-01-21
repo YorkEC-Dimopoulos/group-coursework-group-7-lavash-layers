@@ -1,0 +1,295 @@
+
+a { text-decoration: none; }
+
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff;
+    
+    /* Center the Page */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 60px 20px;
+    
+    /* Sticky Footer Helper */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav ul { gap: 12px; 
+}
+
+header nav a { margin: 0; 
+}     
+
+header {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+
+header h2 {
+  margin: 0 0 10px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+}
+
+h3 {
+    margin-bottom: 15px;
+
+}
+
+#food-intro {
+    max-width: 900px;
+   margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+#food-intro {
+    font-size: 1.1rem;
+}
+
+
+#traditional-dishes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+}
+
+.dish {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+}
+
+
+.dish-img {
+    width: 80%;
+    height: 200px ;
+    object-fit: cover;
+    border-radius: 8px;
+    /* margin-bottom: 10px; */
+}
+
+#restaurant {
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+
+
+}
+
+#restaurant > p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+
+.restaurant img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid;
+    margin: 20px;
+
+}
+
+
+.restaurant {
+    text-align: center;
+    max-width: 700px;
+    margin: 60px auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+}
+
+.restaurant p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+
+.restaurant h3 {
+    margin-bottom: 25px;
+    text-decoration: underline;
+
+}
+
+.restaurant ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.restaurant ul li {
+    margin-bottom: 8px;
+}
+
+
+
+section {
+    max-width: 800px;
+    margin: 60px auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section>ul {
+    background-color:aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    list-style-type: disc;
+}
+
+section>ul>li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+section ul {
+    line-height: 1.6;
+}
+.history-item {
+    max-width:800px;
+    margin:40px auto;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius:12px;
+    box-shadow:aliceblue;
+}
+.history-item h3 {
+    margin-top:0%;
+    margin: bottom 15px;
+    text-align: left;
+    font-size:1.5rem;
+}
+.history-item img {
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius: 8px;
+    margin:10px;
+}
+.history-item p {
+    font-size:1rem;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+header h1 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#street-food {
+    max-width: 1000px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+.street-food-item{
+text-align: center;
+padding: 20px;
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius:14px;
+}
+.street-food-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+.street-food-item p {
+    font-size: 1rem;
+    margin-bottom:15px;
+    line-height: 1.6;
+}
+.street-food-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cafes img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+#cafes {
+    max-width: 700px;
+    margin: 80px auto;
+    text-align: center;
+}
+#cafes h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+#cafes p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+#cafes img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cafe-center h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+.cafe-center p {
+    font-size: 1rem;
+    margin-bottom:15px;
+    line-height: 1.6;
+}
+.cafe-center img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#cafes {
+    max-width: 1000px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+#famous-cafes {
+    max-width: 1000px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}

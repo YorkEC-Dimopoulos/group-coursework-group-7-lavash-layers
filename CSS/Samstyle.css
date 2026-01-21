@@ -1,0 +1,243 @@
+/* Samstyle.css - Structurally Aligned */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Critical for correct sizing */
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff;
+    
+    /* Center the Page */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 60px 20px;
+    
+    /* Sticky Footer Helper */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make links behave consistently */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease; 
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER & NAVIGATION */
+
+.headder {
+  border-bottom: 1px solid #ddd;
+  padding: 16px;
+}
+
+.headder h2 {
+  margin: 0 0 10px;
+}
+
+.headder nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.headder nav a {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+}
+
+
+.headder {
+    padding: 25px 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Pushes Logo left, Links right */
+    align-items: center; /* Vertically aligns them */
+    flex-wrap: wrap; 
+}
+
+nav > a { 
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    align-items: center; /* Aligns list items vertically */
+}
+
+nav ul a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #444;
+    padding: 5px 0;
+}
+
+nav ul a:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+/* MAIN CONTENT SECTIONS */
+
+/* Main wrapper to push footer down */
+main {
+    flex: 1; 
+    width: 100%;
+}
+
+#hero {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    
+    /* Vertically center content inside hero */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+#hero p {
+    color: #666;
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* GRID SYSTEM */
+#top-cafes, 
+#top-venues, 
+#gyms, 
+#outdoor, 
+#parks, 
+#cafes-restaurants, 
+#veterinary, 
+#info-cards,
+#categories {
+    display: grid;
+    /* Responsive columns that fill space evenly */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+/* CARD STRUCTURE */
+article {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+    /* Ensures card content flows correctly */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Forces all cards in a row to match height */
+}
+
+article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-color: #ddd;
+}
+
+article img, 
+.map-placeholder {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Prevents image stretching */
+    display: block;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #eee;
+}
+
+article h3 {
+    padding: 15px 15px 5px 15px;
+    font-size: 1.25rem;
+    color: #222;
+}
+
+article p {
+    padding: 0 15px 15px 15px;
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+    flex-grow: 1; /* Pushes bottom spacing to be even */
+}
+
+/* BUTTONS & CTA */
+#cta, 
+#moving {
+    background-color: #f8f9fa;
+    padding: 50px 30px;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 60px;
+}
+
+#cta h2, 
+#moving h2 {
+    margin-bottom: 20px;
+}
+
+#cta a, 
+#moving a {
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    border: 2px solid #333;
+    padding: 12px 25px;
+    margin: 10px;
+    font-weight: 700;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+#cta a:hover, 
+#moving a:hover {
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    margin-top: auto; /* Pushes footer to bottom */
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    color: #999;
+    font-size: 0.85rem;
+}
